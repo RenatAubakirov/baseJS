@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(a, b) {
+        return a + b;
+        }
+
+        function subtract(a, b) {
+        return a - b;
+        }
+
+        function multiply(a, b) {
+        return a * b;
+        }
+
+        function divide(a, b) {
+        if (b === 0) {
+            return "Деление на ноль невозможно";
+        } else {
+            return a / b;
+        }
+        }
+
+        // Пример использования функций
+        let num1 = 10;
+        let num2 = 5;
+
+        console.log("Сумма:", add(num1, num2));
+        console.log("Разность:", subtract(num1, num2));
+        console.log("Произведение:", multiply(num1, num2));
+        console.log("Частное:", divide(num1, num2));
+    </script>
+    
+</body>
+</html>
