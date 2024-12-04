@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  for (let i = 0; i <= 10; i++) {
+  let description;
+
+  switch (i) {
+    case 0:
+      description = "ноль";
+      break;
+    case 1:
+      description = "нечетное число";
+      break;
+    default:
+      description = i % 2 === 0 ? "четное число" : "нечетное число";
+  }
+
+  console.log(i + " - " + description);
+}
+    </script>
+    
+</body>
+</html>

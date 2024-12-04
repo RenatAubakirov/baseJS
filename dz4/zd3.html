@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Создаем массив из 5 случайных чисел от 0 до 9
+    const randomNumbers = [];
+        for (let i = 0; i < 5; i++) {
+    randomNumbers.push(Math.floor(Math.random() * 10));
+    }
+
+        // 2. Рассчитываем сумму элементов массива
+    const sum = randomNumbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+        // 3. Находим минимальное число в массиве
+    const min = Math.min(...randomNumbers);
+
+        // 4. Проверяем, есть ли число 3 в массиве
+    const hasThree = randomNumbers.includes(3);
+
+        // Выводим результаты
+    console.log("Сгенерированный массив:", randomNumbers);
+    console.log("Сумма элементов:", sum);
+    console.log("Минимальное число:", min);
+    console.log("Содержит ли массив число 3?", hasThree);
+        </script>
+    
+</body>
+</html>
