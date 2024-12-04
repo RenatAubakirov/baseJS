@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let day = 16;
+        let decade;
+        if (day >= 1 && day <= 10) {
+        decade = 'первая';
+        } else if (day > 10 && day <= 20) {
+        decade = 'вторая';
+        } else if (day > 20 && day <= 31) {
+        decade = 'третья';
+        } else {
+        decade = 'некорректное число';
+        }
+        console.log(`Число ${day} попадает в ${decade} декаду месяца.`);
+    </script>
+</body>
+</html>
