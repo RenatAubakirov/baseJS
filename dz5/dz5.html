@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+    const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+
+    // Объединяем массивы в объект
+    const weekDays = en.reduce((acc, key, index) => {
+    acc[key] = ru[index];
+    return acc;
+    }, {});
+
+    console.log(weekDays);
+
+    </script>
+</body>
+</html>
